@@ -8,7 +8,7 @@ import { fetchSkuReq } from "../Actions";
 
 class ProductDetail extends React.Component {
   componentDidMount() {
-    this.props.fetchSkuReq('423');
+    this.props.fetchSkuReq(window.location.pathname.split('/')[2]);
 
     const imgs = document.querySelectorAll('.img-select a');
     const imgBtns = [...imgs];
